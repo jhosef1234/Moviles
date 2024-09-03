@@ -57,7 +57,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/btn9"
         app:layout_constraintEnd_toEndOf="@+id/txtResult"
         app:layout_constraintStart_toEndOf="@+id/btn9"
-        app:layout_constraintTop_toTopOf="@+id/btn9" />
+        app:layout_constraintTop_toTopOf="@+id/btn9"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn4"
@@ -100,10 +101,91 @@
 
     <Button
         android:id="@+id/btnIgual"
-        android:layout_width="0dp"
+        android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:text="="
-        app:layout_constraintEnd_toEndOf="@+id/btnSum"
+        app:layout_constraintEnd_toEndOf="@+id/button8"
+        app:layout_constraintStart_toStartOf="@+id/btnRaiz"
+        app:layout_constraintTop_toBottomOf="@+id/btnRaiz" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
         app:layout_constraintStart_toStartOf="@+id/btn4"
         app:layout_constraintTop_toBottomOf="@+id/btn4" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@+id/btn1"
+        app:layout_constraintEnd_toStartOf="@+id/btn3"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintTop_toTopOf="@+id/btn1" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="@+id/btn2"
+        app:layout_constraintEnd_toStartOf="@+id/btnFrac"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
+        app:layout_constraintTop_toTopOf="@+id/btn2" />
+
+    <Button
+        android:id="@+id/btnFrac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="@+id/btn3"
+        app:layout_constraintEnd_toEndOf="@+id/btnSum"
+        app:layout_constraintStart_toEndOf="@+id/btn3"
+        app:layout_constraintTop_toTopOf="@+id/btn3" />
+
+    <Button
+        android:id="@+id/btnRaiz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="√"
+        app:layout_constraintEnd_toStartOf="@+id/btnPot"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+    <Button
+        android:id="@+id/btnPot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="^"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRaiz"
+        app:layout_constraintEnd_toStartOf="@+id/btnPi"
+        app:layout_constraintStart_toEndOf="@+id/btnRaiz"
+        app:layout_constraintTop_toTopOf="@+id/btnRaiz"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnPi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="π"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPot"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintStart_toEndOf="@+id/btnPot"
+        app:layout_constraintTop_toTopOf="@+id/btnPot"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPi"
+        app:layout_constraintEnd_toEndOf="@+id/btnFrac"
+        app:layout_constraintStart_toEndOf="@+id/btnPi"
+        app:layout_constraintTop_toTopOf="@+id/btnPi" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
